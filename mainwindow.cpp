@@ -26,7 +26,10 @@ void MainWindow::on_actionAbout_triggered()
 {
     msgAbout->setWindowTitle("О программе");
     msgAbout->setIcon(QMessageBox::Information);
-    msgAbout->setText("Версия: " + QString::number(VERSION_MAJOR) + '.' + QString::number(VERSION_MINOR));
+    msgAbout->setText(
+                "Версия: " + QString::number(VERSION_MAJOR) + '.' + QString::number(VERSION_MINOR) + '\n' +
+                "Студент \"Нетологии\" - Белозёров Михаил\n\n" +
+                "2023");
 
     msgAbout->show();
 }
